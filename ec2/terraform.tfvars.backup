@@ -1,0 +1,54 @@
+aws_region   = ""
+aws_profile  = ""
+aws_key_name = ""
+
+tags = {
+  "env" : "",
+  "owner" : "",
+  "cloud" : "AWS",
+  "IAC" : "Terraform",
+  "IAC_version" : "1.6.2",
+  "project" : "",
+  "region" : ""
+}
+
+vpc_cidr = ""
+
+available_zones = [""]
+public_subnets  = [""]
+private_subnets = [""]
+
+custom_ingress_rules = [
+  {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = "0.0.0.0/0"
+    description = "SSH"
+  }
+]
+
+custom_egress_rules = [
+  {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = "0.0.0.0/0"
+    description = "All"
+  }
+]
+
+instances = ["instance-name"]
+
+ec2_specs = {
+  "ami"           = "",
+  "instance_type" = ""
+}
+
+ebs_specs = {
+  "volume_type" : ""
+  "volume_size" : 8
+  tags = {
+    MountPoint = "root-block"
+  }
+}
