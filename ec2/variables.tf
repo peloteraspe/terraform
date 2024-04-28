@@ -8,6 +8,16 @@ variable "aws_profile" {
   type        = string
 }
 
+variable "aws_credentials" {
+  description = "AWS Credentials"
+  type        = string
+}
+
+variable "aws_config" {
+  description = "AWS Config"
+  type        = string
+}
+
 variable "aws_key_name" {
   description = "AWS Key Name"
   type        = string

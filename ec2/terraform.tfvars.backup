@@ -1,6 +1,8 @@
 aws_region   = ""
 aws_profile  = ""
 aws_key_name = ""
+aws_credentials = ""
+aws_config = ""
 
 tags = {
   "env" : "",
