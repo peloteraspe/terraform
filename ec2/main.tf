@@ -37,7 +37,7 @@ module "vpc" {
   }
 }
 
-# Create a security group that allows SSH inbound traffic and all egress traffic
+# Create a security group that allows inbound traffic and egress traffic
 module "security_group" {
   source      = "terraform-aws-modules/security-group/aws"
   version     = "5.1.0"
