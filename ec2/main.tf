@@ -26,7 +26,6 @@ module "vpc" {
   cidr = var.vpc_cidr
 
   azs             = var.available_zones
-  private_subnets = var.private_subnets
   public_subnets  = var.public_subnets
 
   map_public_ip_on_launch = true

@@ -43,11 +43,6 @@ variable "public_subnets" {
   type        = list(string)
 }
 
-variable "private_subnets" {
-  description = "CIDR Private Subnet"
-  type        = list(string)
-}
-
 variable "custom_ingress_rules" {
   description = "List of ingress rules to be added to security group"
   type = list(object({
