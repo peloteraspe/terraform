@@ -11,13 +11,16 @@ This repository contains a Terraform configuration to create one or multiple EC2
 ## Setup
 1. Clone the file ```terraform.tfvars.backup``` and rename it to ```terraform.tfvars```
 2. Fill in the variables in ```terraform.tfstate```
-3. terraform init
-4. terraform plan
-5. terraform apply
+3. To run this example you need to execute:
+```sh
+$ terraform init
+$ terraform plan
+$ terraform apply
+```
 
-## Connect to instance
+## Connect to the instance
 
-1. In this directory there is a file ``.pem`` file
+1. In this directory a ``.pem`` file will be created
 2. Execute `terraform output` to get the public IP
 3. Use ssh for connect to the instance
 ```sh
